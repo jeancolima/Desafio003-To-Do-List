@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #272838;
+}
+
+header {
+    background-color: #347FC4;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 1rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+}
+
+header h1 {
+    margin: 0 1.2rem 1rem 0;
+}
+
+main {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0 0 16px 16px;
+}
+
+.card {
+    width: 900px;
+    height: 300px;
+    animation: fade-in 2s ease-in-out;
+}
+
+.add {
+    text-align: center;
+}
+
+.add #tarefa {
+    border: none;
+    padding: .5rem;
+    border-radius: 16px;
+    width: 70%;
+}
+
+.add #tarefa:focus {
+    outline: 2px solid #272838;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list p {
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem .5rem 0 .5rem;
+    align-items: center;
+}
+
+.list button {
+    background-color: transparent;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.check {
+    border: 1px solid #347FC4;
+}
+
+.delete {
+    border: 1px solid #c43434;
+}
+
+.check i {
+    color: #347FC4;
+}
+
+.delete i {
+    color: #c43434;
+}
+
+button i {
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.feita > p {
+    text-decoration: line-through;
+}
+
+.botao-adicionar {
+    border: 1px solid #347FC4;
+    background-color: #347FC4;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 90%;
+    }
+    
+}
